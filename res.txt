@@ -1,0 +1,54 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+}
+aaa {
+    bbbb;
+    fff {
+        trtryy;
+        hhhh;
+    }
+    else {
+        bsufg;
+    }
+    ccc;
+}
+public IWriter write(final char symbol) throws WriterException {
+    try {
+        bufferedWriter.write(symbol);
+        return this;
+    }
+    catch(IOException ex) {
+        throw new WriterException("Cannot          write to file", ex);
+    }
+}
+void doSomething(final int externalInt) {
+    int i = externalInt;
+    if (i < 5) {
+        i++;
+    }
+    else {
+        i += 10;
+    }
+    String answer = "";
+    if (i > 10) {
+        answer = "i is greater than 10";
+    }
+    else {
+        answer = "i isn't greater than 10";
+    }
+    System.out.print(answer);
+}
+public class Main {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        ExecutorService exec = Executors.newFixedThreadPool(10);
+        int j = 0;
+        while (j < 10) {
+            j++;
+            exec.execute(new TestRunnableClientTester());
+            Thread.sleep(10);
+        }
+        exec.shutdown();
+    }
+}
